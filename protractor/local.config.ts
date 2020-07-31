@@ -1,4 +1,3 @@
-
 import { Config, browser } from 'protractor';
 import { reporter } from './helpers/reporter';
 
