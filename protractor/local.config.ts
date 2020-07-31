@@ -1,6 +1,6 @@
 
 import { Config, browser } from 'protractor';
-
+import { reporter } from './helpers/reporter';
 
 export const config: Config = {
   framework: 'jasmine',
@@ -9,6 +9,7 @@ export const config: Config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   onPrepare: () => { 
     browser.ignoreSynchronization = true;
+    reporter();
   }
 
 };
